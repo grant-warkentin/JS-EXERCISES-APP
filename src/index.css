@@ -1,0 +1,120 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+/* a:hover {
+  color: #535bf2;
+} */
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+p {
+  margin: 1em 0;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  background-color: #4299e1;
+  color: #fff;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link.activated,
+.btn-link.activated:hover {
+  background-color: rgb(34, 197, 94);
+}
+
+.btn-link:hover {
+  background-color: #3182ce;
+}
+
+code {
+  font-size: 0.9em;
+  font-family: monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo;
+  color: #3182ce;
+  background-color: #efefef;
+  font-style: normal;
+}
+codeblock {
+  display: block;
+  padding: 1em;
+  margin: 1em 0;
+  overflow: auto;
+  font-size: 0.9em;
+  font-family: monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo;
+  color: #3182ce;
+  font-style: normal;
+  background-color: #efefef;
+  white-space: pre-wrap;
+}
+
+ol.list-decimal {
+  list-style-type: decimal;
+  margin-left: 0.2em;
+  padding: 0.2em 0 0.2em 1.2em;
+}
+
+ul.list-disc {
+  list-style-type: disc;
+  margin-left: 0.2em;
+  padding: 0.2em 0 0.2em 1.2em;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  /* a:hover {
+    color: #747bff;
+  } */
+  button {
+    background-color: #f9f9f9;
+  }
+}
