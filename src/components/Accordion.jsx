@@ -37,6 +37,7 @@ function Accordion() {
     const ansImport = answers[`exWk${wkId}`][ansNo]
     const ansType = typeof ansImport
     const answer = stringifyAnswer(ansImport, ansType, ansNo)
+    window[ansNo] = ansImport // adding to the global scope for debugging
 
     return (
       <div className="" key={prompt.id}>
