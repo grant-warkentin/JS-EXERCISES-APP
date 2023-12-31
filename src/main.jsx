@@ -1,8 +1,6 @@
-import React from "react"
 import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Root from "./Root"
-import App from "./App"
 import ErrorPage from "./pages/error-page"
 import "./index.css"
 import Accordion from "./components/accordion"
@@ -16,11 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: `exercises/:wkId`,
-        element: (
-          <App>
-            <Accordion />
-          </App>
-        ),
+        element: <Accordion />,
       },
     ],
   },

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { ExercisesContext } from "../utils/ExercisesProvider"
 import { GoChevronDown, GoChevronLeft } from "react-icons/go"
 import { answers, stringifyAnswer } from "../utils/answers"
+import "./accordion.css"
 
 function Accordion() {
   const { wkId } = useParams("wkId")

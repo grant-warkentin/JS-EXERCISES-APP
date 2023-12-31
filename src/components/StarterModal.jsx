@@ -8,7 +8,7 @@ const StarterModal = ({ isOpen, onClose }) => {
   const { wkId } = useParams("wkId")
   const { exercises } = useContext(ExercisesContext)
 
-  const starterCode = exercises.data?.[`wk${wkId}`].startercode || []
+  const starterCode = exercises.data?.[`wk${wkId || "02"}`].startercode || []
   return (
     <div
       className={`fixed inset-0 ${

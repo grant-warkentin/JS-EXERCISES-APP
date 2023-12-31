@@ -45,17 +45,23 @@ export default function Root() {
             </nav>
           )}
           <hr className="my-4" />
-          <button
-            className="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600 focus:outline-none focus:shadow-outline-blue float-right"
-            onClick={openModal}
-          >
-            Get Starter Code
-          </button>
-          <h2 className="text-2xl font-semibold mb-4">Week {wkId} Exercises</h2>
-          <StarterModal isOpen={isModalOpen} onClose={closeModal} />
-          <div className="mt-4 max-w-2xl" id="exercises">
-            <Outlet />
-          </div>
+          {wkId && (
+            <>
+              <button
+                className="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-600 focus:outline-none focus:shadow-outline-blue float-right"
+                onClick={openModal}
+              >
+                Get Starter Code
+              </button>
+              <h2 className="text-2xl font-semibold mb-4">
+                Week {wkId} Exercises
+              </h2>
+              <StarterModal isOpen={isModalOpen} onClose={closeModal} />
+              <div className="mt-4 max-w-2xl" id="exercises">
+                <Outlet />
+              </div>
+            </>
+          )}
         </div>
       </div>
     </>
