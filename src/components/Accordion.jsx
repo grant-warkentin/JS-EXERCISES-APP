@@ -43,7 +43,7 @@ function Accordion() {
     return (
       <div className="" key={prompt.id}>
         <div
-          className="justify-between flex p-3 bg-gray-100 border-b items-center cursor-pointer font-semibold"
+          className="text-black justify-between flex p-3 bg-gray-100 border-b items-center cursor-pointer font-semibold"
           onClick={() => handleClick(index)}
         >
           🎯 {prompt.label}
